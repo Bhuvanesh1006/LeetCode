@@ -1,9 +1,8 @@
 class Solution:
     def kidsWithCandies(self, ca: List[int], ex: int) -> List[bool]:
         res=[]
-        maxi=max(ca)
         for i in range(len(ca)):
-                if ca[i]+ex>=maxi:
+                if ca[i]+ex>=max(ca):
                     res.append(True)
                 else:
                     res.append(False)
