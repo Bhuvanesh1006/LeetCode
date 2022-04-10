@@ -7,7 +7,7 @@ class Solution:
             elif ops[i]=="D":
                 x.append(2*x[-1])
             elif ops[i]=="C":
-                x.remove(x[-1])
+                x.pop()
             else:
                 x.append(int(ops[i]))
         return sum(x)
