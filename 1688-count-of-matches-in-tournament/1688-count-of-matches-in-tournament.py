@@ -3,6 +3,6 @@ class Solution:
         if n%2==0:
             return n-1
         else:
-            return ((((n-1)//2))*2)
+            return (((n-1)//2)*2)
             
         
