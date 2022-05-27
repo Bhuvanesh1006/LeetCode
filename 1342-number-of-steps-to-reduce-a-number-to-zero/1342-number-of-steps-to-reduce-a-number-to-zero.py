@@ -1,14 +1,13 @@
-class Solution:
-    def numberOfSteps(self, num: int) -> int:
-        s=0
+class Solution(object):
+    def numberOfSteps(self, num):
+        st=0
         while num!=0:
-            if num%2==0:
+            if num%2 == 0:
                 num=num/2
-                s+=1
+                st+=1
             else:
                 num-=1
-                s+=1
-            
-        
-        return s
+                st+=1
+        return st
+                
         
