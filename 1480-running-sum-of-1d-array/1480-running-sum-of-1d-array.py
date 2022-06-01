@@ -1,5 +1,10 @@
-class Solution:
-    def runningSum(self, nums: List[int]) -> List[int]:
-        for i in range(1, len(nums)):
-            nums[i] += nums[i - 1]
-        return nums
+class Solution(object):
+    def runningSum(self, nums):
+        dum=0
+        out=[]
+        for i in range(len(nums)):
+            dum+=sum(nums[:i+1])
+            out.append(dum)
+            dum=0
+        return out
+            
