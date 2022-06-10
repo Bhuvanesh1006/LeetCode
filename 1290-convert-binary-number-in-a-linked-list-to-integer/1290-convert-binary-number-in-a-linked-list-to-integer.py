@@ -13,7 +13,7 @@ class Solution(object):
         decimal,i,n=0,0,0
         while k!=0:
             dec=k%10
-            decimal=decimal+dec * pow(2,i)
+            decimal=decimal+dec * (2**i)
             k=k//10
             i+=1
         return decimal
